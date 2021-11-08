@@ -18,9 +18,11 @@ const UserPage = () => {
   </div>)
 }
 
+console.log(process.env)
+
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div>
         <nav>
           <ul>
