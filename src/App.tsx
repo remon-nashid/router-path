@@ -9,7 +9,12 @@ import {
 
 const About = () => (<h3>About</h3>)
 const Users = () => (<h3>Users</h3>)
-const Home = () => (<h3>Home</h3>)
+const Home = () => (
+<div>
+  <h3>Home</h3>
+  <Link to='/users/1'>User 1</Link>
+</div>
+)
 const UserPage = () => {
   let { id } = useParams<{id: string}>();
   
